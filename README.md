@@ -9,8 +9,9 @@ Queue
 -  peek – gets the top item  
 
 
-Ideal backing data structure: Doubly Linked List is.  
+Ideal backing data structure: Doubly Linked List O(1).  
 We wrap the linked list and expose only the queue specific methods add, remove, peek.  
+
 When backing with array if array is not resize => O(1), else O(n). 
 
 Circular Array Queue: when we add and remove items, the back reaches the array length and the array is resize even if it has empty space at the beginning.  
